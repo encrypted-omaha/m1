@@ -8,14 +8,37 @@ const CONFIG = {
     subtitle: "CELEBRATING THE 35TH ANNIVERSARY OF PGP 1.0",
 
     // Event Details
-    location: "PKI ROOM 158",
-    date: "JUNE 5, 2026",
+    location: "TBA",
+    date: "TBA",
 
     // Section Title
     sectionTitle: "GPG KEY EXCHANGE",
 
     // Main Description
-    description: `A practical digital self-defense workshop. No financial crypto. Just privacy. Join us for discussion, hands-on tutorials, and a slice. Commemorating the public release of Phil Zimmermann, open-source cryptography pioneer: we'll help you generate your first key pair and Build Your Circle of Trust. We will cover: E2EE basics, key management (PGP/GPG), and Metadata hygiene. For more information:`,
+    description: `A practical digital self-defense workshop. No financial crypto. Just privacy. 
+    <ul><li>discussion</li>
+	<li>hands-on tutorials</li>
+        <li>
+We'll help you install GnuPG.org
+</li>
+        <li>
+generate your first key pair 
+</li>
+        <li>
+Build Your Circle of Trust
+</li>
+        <li>
+	End to end encryption (E2EE) basics
+</li>
+        <li>
+	encryption key management
+</li>
+        <li>
+	Metadata hygiene. 
+</li>
+</ul>
+	`,
+
 
     // Contact & RSVP
     contactEmail: "contact@example.com",
@@ -29,3 +52,4 @@ const CONFIG = {
     // Background image (the aerial map)
     backgroundImage: "PGP_Party.png"
 };
+
