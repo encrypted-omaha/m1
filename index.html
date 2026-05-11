@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza and Privacy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="poster">
+        <!-- Header -->
+        <div class="header">
+            <h1 class="title" id="title"></h1>
+            <p class="subtitle" id="subtitle"></p>
+        </div>
+
+        <!-- Info Bar -->
+        <div class="info-bar">
+            <span class="location" id="location"></span>
+            <span class="date" id="date"></span>
+        </div>
+
+        <!-- Map Section -->
+        <div class="map-section">
+            <span class="map-placeholder">[Aerial Map View]</span>
+        </div>
+
+        <!-- Section Title -->
+        <h2 class="section-title" id="sectionTitle"></h2>
+
+        <!-- Shield Icon -->
+        <div class="shield-icon">🛡️</div>
+
+        <!-- Description -->
+        <p class="description" id="description"></p>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-links">
+                <a href="#" class="footer-link" id="contactLink"></a>
+                <a href="#" class="footer-link" id="rsvpLink" target="_blank" rel="noopener noreferrer"></a>
+            </div>
+            <div class="organization" id="organization"></div>
+        </div>
+    </div>
+
+    <!-- Load config and populate content -->
+    <script src="config.js"></script>
+    <script>
+        // Populate all content from config
+        document.getElementById('title').textContent = CONFIG.title;
+        document.getElementById('subtitle').textContent = CONFIG.subtitle;
+        document.getElementById('location').textContent = CONFIG.location;
+        document.getElementById('date').textContent = CONFIG.date;
+        document.getElementById('sectionTitle').textContent = CONFIG.sectionTitle;
+        document.getElementById('description').textContent = CONFIG.description;
+        document.getElementById('organization').textContent = CONFIG.organization;
+
+        // Contact email link
+        const contactLink = document.getElementById('contactLink');
+        contactLink.href = 'mailto:' + CONFIG.contactEmail;
+        contactLink.textContent = CONFIG.contactLabel;
+
+        // RSVP link (opens in new tab via target="_blank" in HTML)
+        const rsvpLink = document.getElementById('rsvpLink');
+        rsvpLink.href = CONFIG.rsvpUrl;
+        rsvpLink.textContent = CONFIG.rsvpLabel;
+    </script>
+</body>
+</html>
